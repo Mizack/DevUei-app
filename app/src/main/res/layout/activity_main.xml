@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="90dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="E-mail:"
+        />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Digite seu e-mail..."
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:textColorHint="#4E5169" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Senha:"
+        />
+
+    <EditText
+        android:id="@+id/txt_senha"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Digite sua senha..."
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:textColorHint="#4E5169" />
+
+    <Button
+        android:id="@+id/logar"
+        android:layout_width="280dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/cinza"
+        android:text="Entrar"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/cadastrar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#4E5169"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:backgroundTint="@color/white"
+        android:text="Cadastrar"
+        android:textSize="16dp"/>
+
+</LinearLayout>
